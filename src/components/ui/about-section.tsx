@@ -241,15 +241,12 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
               customVariants={revealVariants}
               className="flex flex-wrap items-center gap-3 sm:gap-4"
             >
-              <div className="flex items-center gap-2 text-xs sm:text-sm">
-                <span className="text-white font-semibold">Brand</span>
-                <span className="text-zinc-400 font-serif italic">Identity</span>
-                <span className="text-zinc-800">|</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm">
-                <span className="text-white font-semibold">Packaging</span>
-                <span className="text-zinc-400">Motion Design</span>
-              </div>
+              {["Brand Strategy", "Visual Storytelling", "Creative Concepts"].map((item, i) => (
+                <div key={item} className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm">
+                  {i > 0 && <span className="text-zinc-800">|</span>}
+                  <span className="text-white font-semibold">{item}</span>
+                </div>
+              ))}
             </TimelineContent>
           </div>
         </div>
