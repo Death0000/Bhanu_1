@@ -96,7 +96,7 @@ export default function HeroSection({ scrollProgress, setActivePage }: HeroSecti
           className="text-left sm:text-right"
         >
           <span className="text-[12px] sm:text-[13px] text-zinc-400 font-sans font-medium">
-            Derby, United Kingdom
+            Sheffield, United Kingdom
           </span>
         </motion.div>
       </div>

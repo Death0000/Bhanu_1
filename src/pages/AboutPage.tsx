@@ -141,7 +141,7 @@ export default function AboutPage() {
   const [photoMode, setPhotoMode] = useState<"exhibition" | "studio">("studio");
 
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-white/10 selection:text-white overflow-hidden">
+    <div className="w-full min-h-screen bg-black text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-signal selection:text-black overflow-hidden">
 
       {/* Hero Intro with Senior UI/UX Portrait Showcase */}
       <div className="max-w-7xl mx-auto mb-16 relative z-10">
@@ -150,7 +150,7 @@ export default function AboutPage() {
           {/* Left: Editorial Headline & Bio */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950 border border-zinc-800/80 text-xs text-zinc-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-signal animate-pulse" />
               <span>Available for freelance & design opportunities</span>
             </div>
 
@@ -168,7 +168,7 @@ export default function AboutPage() {
             {/* Quick Metadata Badges */}
             <div className="flex flex-wrap items-center gap-3 pt-2 text-xs">
               <div className="flex items-center gap-2 px-3.5 py-2 bg-zinc-950 border border-zinc-900 rounded-lg text-zinc-300">
-                <MapPin className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
+                <MapPin className="h-3.5 w-3.5 text-zinc-400 shrink-0" />
                 <span>Sheffield, United Kingdom</span>
               </div>
               <div className="flex items-center gap-2 px-3.5 py-2 bg-zinc-950 border border-zinc-900 rounded-lg text-zinc-300">
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 <span>MA Design (Graphics)</span>
               </div>
               <div className="flex items-center gap-2 px-3.5 py-2 bg-zinc-950 border border-zinc-900 rounded-lg text-zinc-300">
-                <Sparkles className="h-3.5 w-3.5 text-amber-400 shrink-0" />
+                <Sparkles className="h-3.5 w-3.5 text-zinc-400 shrink-0" />
                 <span>Brand & Packaging Design</span>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function AboutPage() {
                   {/* Top Bar: Status & Mode Switcher */}
                   <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-20">
                     <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[11px] font-medium text-zinc-200">
-                      <span className={`w-1.5 h-1.5 rounded-full ${photoMode === "exhibition" ? "bg-amber-400" : "bg-emerald-400"}`} />
+                      <span className={`w-1.5 h-1.5 rounded-full ${photoMode === "exhibition" ? "bg-signal" : "bg-signal"}`} />
                       <span>{photoMode === "exhibition" ? "Exhibition Showcase" : "Studio Workspace"}</span>
                     </div>
 
@@ -267,7 +267,7 @@ export default function AboutPage() {
                     <span className="text-zinc-500">Focus:</span>
                     <strong className="text-zinc-200 font-medium">Brand Identity & Packaging</strong>
                   </span>
-                  <span className="text-zinc-500 font-mono">Derby, UK</span>
+                  <span className="text-zinc-500 font-mono">Sheffield, UK</span>
                 </div>
 
               </div>
@@ -282,7 +282,7 @@ export default function AboutPage() {
         <div className="lg:col-span-7 space-y-12">
           
           {/* Story */}
-          <div className="rounded-xl bg-[#0c0c0e] border border-zinc-900 p-6 sm:p-8 space-y-5">
+          <div className="rounded-xl bg-surface border border-zinc-900 p-6 sm:p-8 space-y-5">
             <h2 className="text-sm font-semibold text-white">
               My story
             </h2>
@@ -373,7 +373,7 @@ export default function AboutPage() {
                     {WORK_EXPERIENCE.map((exp, idx) => (
                       <div 
                         key={idx}
-                        className="rounded-xl bg-[#0c0c0e] border border-zinc-900 p-5 relative overflow-hidden transition-all duration-300 hover:border-zinc-800"
+                        className="rounded-xl bg-surface border border-zinc-900 p-5 relative overflow-hidden transition-all duration-300 hover:border-zinc-800"
                       >
                         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2.5 mb-3.5">
                           <div>
@@ -418,7 +418,7 @@ export default function AboutPage() {
                     {EDUCATION_HISTORY.map((edu, idx) => (
                       <div 
                         key={idx}
-                        className="rounded-xl bg-[#0c0c0e] border border-zinc-900 p-5 relative overflow-hidden transition-all duration-300 hover:border-zinc-800"
+                        className="rounded-xl bg-surface border border-zinc-900 p-5 relative overflow-hidden transition-all duration-300 hover:border-zinc-800"
                       >
                         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2.5 mb-3.5">
                           <div>
@@ -490,7 +490,7 @@ export default function AboutPage() {
           </div>
 
           {/* Skills — simple tag cloud with magnetic spring physics */}
-          <div className="rounded-xl border border-zinc-800 bg-[#0c0c0e] p-6 relative overflow-hidden">
+          <div className="rounded-xl border border-zinc-800 bg-surface p-6 relative overflow-hidden">
             <div className="space-y-5">
               <h3 className="text-sm font-semibold text-white">
                 Skills & tools
@@ -522,7 +522,7 @@ export default function AboutPage() {
             <Magnetic strength={0.3} bounce={0.3} className="w-full">
               <button 
                 onClick={() => alert("CV download coming soon! Please reach out via email for now.")}
-                className="px-4 py-2 w-full text-xs bg-white text-black hover:bg-zinc-200 transition-all cursor-pointer focus:outline-none rounded-lg font-medium shadow-md hover:shadow-white/10"
+                className="px-4 py-2 w-full text-xs bg-signal text-black hover:bg-white transition-all cursor-pointer focus:outline-none rounded-lg font-medium shadow-md hover:shadow-white/10"
               >
                 Download CV
               </button>

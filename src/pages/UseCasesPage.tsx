@@ -73,7 +73,7 @@ export default function UseCasesPage() {
   const currentStudy = CASE_STUDIES.find((cs) => cs.id === activeStudyId) || CASE_STUDIES[0];
 
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-white/10 selection:text-white">
+    <div className="w-full min-h-screen bg-black text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-signal selection:text-black">
 
       {/* Page Title */}
       <div className="max-w-7xl mx-auto mb-12">
@@ -101,7 +101,7 @@ export default function UseCasesPage() {
               {activeStudyId === cs.id && (
                 <motion.span
                   layoutId="case-tab-border"
-                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-white"
+                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-signal"
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 />
               )}
@@ -140,7 +140,7 @@ export default function UseCasesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {currentStudy.stats.map((stat, i) => (
               <AnimeTiltCard key={i} maxTilt={7} scale={1.02} glare={true}>
-                <div className="min-w-0 p-4 rounded-xl bg-[#0d0d0f] border border-zinc-900 flex flex-col justify-center items-center text-center h-full">
+                <div className="min-w-0 p-4 rounded-xl bg-surface border border-zinc-900 flex flex-col justify-center items-center text-center h-full">
                   <span className="max-w-full break-words text-lg sm:text-xl font-light leading-tight text-white">{stat.value}</span>
                   <span className="text-[11px] text-zinc-500 mt-2 leading-tight">
                     {stat.label}
@@ -168,7 +168,7 @@ export default function UseCasesPage() {
         {/* RIGHT: Process */}
         <div className="lg:col-span-7">
           <AnimeTiltCard maxTilt={3} scale={1.005} glare={false}>
-            <div className="rounded-2xl border border-zinc-800 bg-[#0d0d0f] p-5 sm:p-7 relative overflow-hidden">
+            <div className="rounded-2xl border border-zinc-800 bg-surface p-5 sm:p-7 relative overflow-hidden">
               
               <div className="mb-6">
                 <h3 className="text-sm font-semibold text-white">

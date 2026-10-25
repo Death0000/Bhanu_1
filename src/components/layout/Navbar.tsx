@@ -73,7 +73,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-8 transition-all duration-500 ease-in-out ${
           isScrolled || mobileMenuOpen
-            ? "py-3.5 sm:py-4 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/[0.06] shadow-2xl"
+            ? "py-3.5 sm:py-4 bg-black/90 backdrop-blur-xl border-b border-white/[0.06] shadow-2xl"
             : "py-5 sm:py-6 bg-transparent border-b border-transparent"
         }`}
       >
@@ -119,7 +119,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
                     {isActive && !hoveredIndex && (
                       <motion.span
                         layoutId="navbar-active-dot"
-                        className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-white rounded-full"
+                        className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-signal rounded-full"
                       />
                     )}
                     {link.label}
@@ -227,7 +227,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -15, scale: 0.98 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="fixed top-[62px] inset-x-3 sm:inset-x-6 z-40 bg-[#0d0d10]/95 backdrop-blur-2xl border border-zinc-800/90 rounded-2xl p-5 shadow-2xl md:hidden overflow-hidden flex flex-col gap-4 max-h-[85vh] overflow-y-auto"
+              className="fixed top-[62px] inset-x-3 sm:inset-x-6 z-40 bg-surface/95 backdrop-blur-2xl border border-zinc-800/90 rounded-2xl p-5 shadow-2xl md:hidden overflow-hidden flex flex-col gap-4 max-h-[85vh] overflow-y-auto"
             >
               {/* Home Link */}
               <div className="space-y-1">
@@ -290,7 +290,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
                   >
-                    <Linkedin className="w-3.5 h-3.5 text-blue-400" />
+                    <Linkedin className="w-3.5 h-3.5 text-zinc-400" />
                     <span className="font-medium">LinkedIn</span>
                     <ArrowUpRight className="w-3 h-3 ml-auto text-zinc-500" />
                   </a>
@@ -301,7 +301,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
                   >
-                    <BehanceIcon className="w-3.5 h-3.5 text-blue-400" />
+                    <BehanceIcon className="w-3.5 h-3.5 text-zinc-400" />
                     <span className="font-medium">Portfolio</span>
                     <ArrowUpRight className="w-3 h-3 ml-auto text-zinc-500" />
                   </a>
@@ -312,7 +312,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
                     href="mailto:Bhanupartap1711@gmail.com"
                     className="flex items-center gap-2.5 p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
                   >
-                    <Mail className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <Mail className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                     <span className="truncate">Bhanupartap1711@gmail.com</span>
                   </a>
 
@@ -320,7 +320,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
                     href="tel:+447311725356"
                     className="flex items-center gap-2.5 p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
                   >
-                    <Phone className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <Phone className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                     <span>+44 7311725356</span>
                   </a>
                 </div>
@@ -329,7 +329,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
               {/* Action Button */}
               <button
                 onClick={() => handleNavClick("contact")}
-                className="w-full py-3 rounded-xl bg-white text-black font-semibold text-xs tracking-wide uppercase transition-transform active:scale-98 cursor-pointer mt-1"
+                className="w-full py-3 rounded-xl bg-signal text-black font-semibold text-xs tracking-wide uppercase transition-transform active:scale-98 cursor-pointer mt-1"
               >
                 Get In Touch
               </button>

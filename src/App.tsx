@@ -21,7 +21,7 @@ export default function App() {
   }, [activePage]);
 
   return (
-    <main className="relative min-h-screen bg-[#09090b] text-zinc-150 flex flex-col selection:bg-zinc-800 selection:text-white">
+    <main className="relative min-h-screen bg-black text-zinc-150 flex flex-col selection:bg-signal selection:text-black">
       {/* Premium Floating Header navbar with global page state controller */}
       <Navbar activePage={activePage} setActivePage={setActivePage} />
 

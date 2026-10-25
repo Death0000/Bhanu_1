@@ -106,12 +106,12 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
 
   const getServiceIcon = (id: string) => {
     switch(id) {
-      case "ui-ux": return <Layers className="h-5 w-5 text-emerald-400" />;
-      case "prompting": return <Terminal className="h-5 w-5 text-purple-400" />;
-      case "mobile-app": return <Smartphone className="h-5 w-5 text-blue-400" />;
-      case "web-design": return <Globe className="h-5 w-5 text-amber-400" />;
-      case "branding": return <Award className="h-5 w-5 text-rose-400" />;
-      case "consultation": return <MessagesSquare className="h-5 w-5 text-sky-400" />;
+      case "ui-ux": return <Layers className="h-5 w-5 text-zinc-400" />;
+      case "prompting": return <Terminal className="h-5 w-5 text-zinc-400" />;
+      case "mobile-app": return <Smartphone className="h-5 w-5 text-zinc-400" />;
+      case "web-design": return <Globe className="h-5 w-5 text-zinc-400" />;
+      case "branding": return <Award className="h-5 w-5 text-zinc-400" />;
+      case "consultation": return <MessagesSquare className="h-5 w-5 text-zinc-400" />;
       default: return <Layers className="h-5 w-5 text-zinc-300" />;
     }
   };
@@ -139,7 +139,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-white/10 selection:text-white">
+    <div className="w-full min-h-screen bg-black text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-signal selection:text-black">
 
       {/* Title block */}
       <div className="max-w-7xl mx-auto mb-12">
@@ -191,8 +191,8 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
                   onMouseLeave={() => setHoveredIdx(null)}
                   className={`p-5 rounded-xl border text-left transition-all duration-300 relative overflow-hidden group cursor-pointer flex flex-col justify-between ${
                     isSelected
-                      ? "bg-[#0e0e11] border-zinc-700 shadow-lg"
-                      : "bg-[#0c0c0e] border-zinc-900 hover:border-zinc-800"
+                      ? "bg-surface border-zinc-700 shadow-lg"
+                      : "bg-surface border-zinc-900 hover:border-zinc-800"
                   }`}
                   style={{ minHeight: "240px" }}
                 >
@@ -213,7 +213,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
                     <h4 className="text-[16px] sm:text-lg font-semibold text-white tracking-tight mb-2 flex items-center gap-2">
                       {srv.title}
                       {isSelected && (
-                        <div className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                        <div className="h-1.5 w-1.5 rounded-full bg-signal" />
                       )}
                     </h4>
                     <p className="text-xs text-zinc-400 leading-normal mb-5 line-clamp-3">
@@ -240,7 +240,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
 
         {/* RIGHT: Summary Panel */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="rounded-xl border border-zinc-800 bg-[#0c0c0e] p-6 lg:p-8 relative overflow-hidden">
+          <div className="rounded-xl border border-zinc-800 bg-surface p-6 lg:p-8 relative overflow-hidden">
             
             <div className="space-y-6 z-10 relative">
               <div className="border-b border-zinc-900 pb-3">
@@ -263,7 +263,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
                 <div className="p-4 bg-zinc-950 border border-zinc-900/80 rounded-lg space-y-2.5">
                   <div className="flex items-center justify-between text-xs">
                     <span className="text-zinc-400">Consultation hours</span>
-                    <span className="text-emerald-400 font-medium">{customHours} hours</span>
+                    <span className="text-zinc-400 font-medium">{customHours} hours</span>
                   </div>
                   <input
                     type="range"
@@ -297,7 +297,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
                       <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 pl-7">
                         {srv.included.map((inc, i) => (
                           <div key={i} className="flex items-center gap-1.5 text-[11px] text-zinc-400">
-                            <CheckCircle2 className="h-3 w-3 text-emerald-500 inline-block shrink-0" strokeWidth={2} />
+                            <CheckCircle2 className="h-3 w-3 text-zinc-400 inline-block shrink-0" strokeWidth={2} />
                             <span className="truncate">{inc}</span>
                           </div>
                         ))}
@@ -320,7 +320,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
               
               <div className="flex items-center justify-between border-b border-zinc-900 pb-3">
                 <span className="text-xs text-zinc-400">Estimated cost</span>
-                <span className="text-xl sm:text-2xl text-emerald-400 font-semibold">
+                <span className="text-xl sm:text-2xl text-signal font-semibold">
                   {calculateTotalEstimate() === 0 ? "—" : `$${calculateTotalEstimate().toLocaleString()}`}
                 </span>
               </div>
@@ -333,7 +333,7 @@ export default function SolutionPage({ setActivePage }: SolutionPageProps) {
                 <button
                   type="button"
                   onClick={() => setActivePage ? setActivePage("contact") : null}
-                  className="w-full py-4 rounded-xl bg-white hover:bg-neutral-200 text-black font-semibold text-xs transition-colors duration-300 flex items-center justify-center gap-2 cursor-pointer focus:outline-none"
+                  className="w-full py-4 rounded-xl bg-signal hover:bg-white text-black font-semibold text-xs transition-colors duration-300 flex items-center justify-center gap-2 cursor-pointer focus:outline-none"
                 >
                   <span>Get in touch about this</span>
                   <ArrowUpRight className="h-4 w-4" />

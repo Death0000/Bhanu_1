@@ -34,7 +34,7 @@ export default function FeaturesSection() {
     <section
       id="bhanu-features-section"
       ref={containerRef}
-      className="w-full bg-[#0a0a0c] text-white font-sans antialiased relative overflow-hidden lg:h-screen flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-14 py-6 sm:py-8 md:py-10 selection:bg-white/10 selection:text-white"
+      className="w-full bg-black text-white font-sans antialiased relative overflow-hidden lg:h-screen flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-14 py-6 sm:py-8 md:py-10 selection:bg-signal selection:text-black"
     >
       {/* Top Header Row Block */}
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8 lg:mb-10 w-full z-10 relative">
@@ -49,9 +49,9 @@ export default function FeaturesSection() {
         
         {/* Action CTA Button */}
         <Magnetic strength={0.3} bounce={0.3}>
-          <button className="liquid-glass text-white/90 text-[13px] sm:text-sm font-medium px-5 sm:px-6 py-2.5 sm:py-3 rounded-full hover:bg-white/5 transition-all duration-300 active:scale-95 flex items-center gap-2 group border border-white/10 shrink-0 self-start lg:self-center mt-2 lg:mt-0 cursor-pointer">
+          <button className="bg-signal text-black text-[13px] sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-full hover:bg-white transition-all duration-300 active:scale-95 flex items-center gap-2 group shrink-0 self-start lg:self-center mt-2 lg:mt-0 cursor-pointer">
             <span>Get in touch</span>
-            <ArrowUpRight className="h-4 w-4 text-white/60 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" strokeWidth={1.5} />
+            <ArrowUpRight className="h-4 w-4 text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" strokeWidth={2} />
           </button>
         </Magnetic>
       </div>
@@ -102,19 +102,19 @@ export default function FeaturesSection() {
         {/* COLUMN 2: STACKED DOUBLE CARDS */}
         <div className="grid grid-rows-1 sm:grid-rows-2 lg:grid-rows-[auto_1fr] gap-4 md:gap-5 h-full">
           {/* Top: Philosophy Card */}
-          <div className="rounded-2xl bg-[#324444] p-5 md:p-6 noise-overlay relative overflow-hidden flex flex-col justify-between gap-4 border border-white/5 shadow-md">
+          <div className="rounded-2xl bg-concrete p-5 md:p-6 relative overflow-hidden flex flex-col justify-between gap-4 border border-black/10 shadow-md">
             <div className="flex items-center gap-2 z-10 relative justify-start">
-              <span className="text-[12px] text-white/60 font-medium tracking-wide">
+              <span className="text-[12px] text-black/70 font-medium tracking-wide">
                 Philosophy
               </span>
             </div>
 
-            <blockquote className="text-[13px] sm:text-[13.5px] leading-[1.65] text-white/85 z-10 relative font-sans italic my-1.5">
+            <blockquote className="text-[13px] sm:text-[13.5px] leading-[1.65] text-black/90 z-10 relative font-sans font-medium my-1.5">
               "Design starts with a story. The work becomes stronger when the message, the audience and the emotion are all anchored in the same idea."
             </blockquote>
 
-            <div className="z-10 relative text-xs text-white/75 font-sans mt-auto">
-              <strong className="text-white font-semibold">Bhanu Partap</strong>, Graphic Designer
+            <div className="z-10 relative text-xs text-black/75 font-sans mt-auto">
+              <strong className="text-black font-semibold">Bhanu Partap</strong>, Graphic Designer
             </div>
           </div>
 
@@ -131,7 +131,7 @@ export default function FeaturesSection() {
 
             <div className="m-auto grid grid-cols-2 gap-4 text-center z-10 relative w-full">
               <div>
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white select-none drop-shadow-md font-serif italic">
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white select-none drop-shadow-md font-bold">
                   50+
                 </span>
                 <p className="text-white/80 text-[12px] font-medium tracking-wide mt-1">
@@ -139,7 +139,7 @@ export default function FeaturesSection() {
                 </p>
               </div>
               <div>
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white select-none drop-shadow-md font-serif italic">
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white select-none drop-shadow-md font-bold">
                   50+
                 </span>
                 <p className="text-white/80 text-[12px] font-medium tracking-wide mt-1">
@@ -222,18 +222,18 @@ export default function FeaturesSection() {
           </div>
 
           {/* Bottom: Contact Card */}
-          <div className="rounded-2xl bg-[#324444] p-5 md:p-6 noise-overlay relative overflow-hidden flex flex-col justify-between border border-white/5 min-h-[160px] shadow-md gap-4">
+          <div className="rounded-2xl bg-concrete p-5 md:p-6 relative overflow-hidden flex flex-col justify-between border border-black/10 min-h-[160px] shadow-md gap-4">
             <div className="flex items-center justify-between w-full z-10 relative">
-              <span className="text-[12px] text-white/60 font-medium tracking-wide">
+              <span className="text-[12px] text-black/70 font-medium tracking-wide">
                 Get in touch
               </span>
 
               <Magnetic strength={0.35} bounce={0.3}>
                 <a
                   href="mailto:Bhanupartap1711@gmail.com"
-                  className="h-9 w-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all border border-white/20 active:scale-95 group focus:outline-none cursor-pointer"
+                  className="h-9 w-9 rounded-full bg-black hover:bg-black/80 flex items-center justify-center transition-all border border-black active:scale-95 group focus:outline-none cursor-pointer"
                 >
-                  <ArrowUpRight className="h-4 w-4 text-white/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" strokeWidth={1.5} />
+                  <ArrowUpRight className="h-4 w-4 text-signal group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" strokeWidth={1.5} />
                 </a>
               </Magnetic>
             </div>
@@ -242,13 +242,13 @@ export default function FeaturesSection() {
             <div className="z-10 relative mt-auto flex flex-col gap-1.5 pt-4">
               <a
                 href="mailto:Bhanupartap1711@gmail.com"
-                className="text-[15px] sm:text-[17px] font-medium text-white/90 font-sans hover:text-white hover:underline transition-colors block w-fit select-all"
+                className="text-[15px] sm:text-[17px] font-medium text-black/90 font-sans hover:text-black hover:underline transition-colors block w-fit select-all"
               >
                 Bhanupartap1711@gmail.com
               </a>
               <a
                 href="tel:+447352664141"
-                className="text-[14px] sm:text-base text-white/60 font-sans hover:text-white/80 transition-colors block w-fit select-all"
+                className="text-[14px] sm:text-base text-black/70 font-sans hover:text-black/80 transition-colors block w-fit select-all"
               >
                 +44 7352 664141
               </a>

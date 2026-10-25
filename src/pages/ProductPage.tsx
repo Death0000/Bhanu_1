@@ -100,7 +100,7 @@ export default function ProductPage() {
   const currentSection = IMBUED_SECTIONS.find((s) => s.id === activeSection) || IMBUED_SECTIONS[0];
 
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white pt-28 pb-20 relative font-sans antialiased selection:bg-white/10 selection:text-white">
+    <div className="w-full min-h-screen bg-black text-white pt-28 pb-20 relative font-sans antialiased selection:bg-signal selection:text-black">
 
       {/* ─── Page Header ─── */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 mb-12">
@@ -152,7 +152,7 @@ export default function ProductPage() {
           >
             {/* Hero Section */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 mb-16">
-              <div className="rounded-2xl border border-zinc-800/60 bg-[#0d0d0f] overflow-hidden">
+              <div className="rounded-2xl border border-zinc-800/60 bg-surface overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                   {/* Left — Project Info */}
                   <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
@@ -372,7 +372,7 @@ export default function ProductPage() {
             transition={{ duration: 0.45 }}
           >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-              <div className="rounded-2xl border border-zinc-800/60 bg-[#0d0d0f] p-8 sm:p-10 lg:p-14">
+              <div className="rounded-2xl border border-zinc-800/60 bg-surface p-8 sm:p-10 lg:p-14">
                 {/* Header */}
                 <div className="flex items-center gap-2 mb-8">
                   <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-500 px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800">
@@ -421,7 +421,7 @@ export default function ProductPage() {
                       href="https://www.behance.net/bhanupartap5"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-black text-xs font-semibold rounded-lg hover:bg-zinc-200 transition-colors"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-signal text-black text-xs font-semibold rounded-lg hover:bg-white transition-colors"
                     >
                       <span>VIEW FULL RESEARCH</span>
                       <ArrowRight className="w-3.5 h-3.5" />

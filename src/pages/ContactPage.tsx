@@ -55,7 +55,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-white/10 selection:text-white">
+    <div className="w-full min-h-screen bg-black text-white pt-28 px-4 sm:px-6 md:px-10 lg:px-14 pb-20 relative font-sans antialiased selection:bg-signal selection:text-black">
 
       {/* Page Title */}
       <div className="max-w-7xl mx-auto mb-12">
@@ -71,7 +71,7 @@ export default function ContactPage() {
         
         {/* LEFT: Contact Form */}
         <div className="lg:col-span-7">
-          <div className="rounded-2xl border border-zinc-800 bg-[#0d0d0f] p-5 sm:p-7 md:p-8 relative overflow-hidden">
+          <div className="rounded-2xl border border-zinc-800 bg-surface p-5 sm:p-7 md:p-8 relative overflow-hidden">
             
             <AnimatePresence mode="wait">
               {!submitted ? (
@@ -96,7 +96,7 @@ export default function ContactPage() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Bhanu Partap"
-                        className="w-full bg-[#050507] border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors"
+                        className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors"
                       />
                     </div>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="you@company.com"
-                        className="w-full bg-[#050507] border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors"
+                        className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors"
                       />
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                     <select
                       value={projectType}
                       onChange={(e) => setProjectType(e.target.value)}
-                      className="w-full bg-[#050507] border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-400 transition-colors cursor-pointer appearance-none"
+                      className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-400 transition-colors cursor-pointer appearance-none"
                     >
                       <option value="ui-ux">Brand Identity</option>
                       <option value="mobile-app">Packaging Design</option>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                       onChange={(e) => setMessage(e.target.value)}
                       rows={4}
                       placeholder="A brief description of what you're looking for, your timeline, and any relevant details..."
-                      className="w-full bg-[#050507] border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors resize-none"
+                      className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors resize-none"
                     />
                   </div>
 
@@ -149,7 +149,7 @@ export default function ContactPage() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full py-4 rounded-xl bg-white text-black font-semibold text-sm transition-all hover:bg-zinc-200 active:scale-[0.99] flex items-center justify-center gap-2 focus:outline-none select-none disabled:opacity-50 cursor-pointer shadow-lg hover:shadow-white/10"
+                        className="w-full py-4 rounded-xl bg-signal text-black font-semibold text-sm transition-all hover:bg-white active:scale-[0.99] flex items-center justify-center gap-2 focus:outline-none select-none disabled:opacity-50 cursor-pointer shadow-lg hover:shadow-white/10"
                       >
                         {isSubmitting ? (
                           <span>Sending...</span>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="z-10 relative text-center py-12 px-4 space-y-4"
                 >
-                  <div className="h-12 w-12 rounded-full bg-emerald-950 border border-emerald-900 mx-auto flex items-center justify-center text-emerald-400">
+                  <div className="h-12 w-12 rounded-full bg-signal/10 border border-signal/30 mx-auto flex items-center justify-center text-signal">
                     <CheckCircle2 className="h-6 w-6" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-xl font-medium text-white">Message sent!</h3>
@@ -195,7 +195,7 @@ export default function ContactPage() {
         <div className="lg:col-span-12 xl:col-span-5 space-y-6">
           
           {/* Contact channels */}
-          <div className="rounded-2xl border border-zinc-900 bg-[#0d0d0f] p-5 sm:p-6 space-y-4">
+          <div className="rounded-2xl border border-zinc-900 bg-surface p-5 sm:p-6 space-y-4">
             <h4 className="text-sm font-semibold text-white">Direct contact</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <AnimeTiltCard maxTilt={5} scale={1.02} glare={true}>
@@ -231,7 +231,7 @@ export default function ContactPage() {
           </div>
 
           {/* FAQs */}
-          <div className="rounded-2xl border border-zinc-900 bg-[#0d0d0f] p-5 sm:p-6 space-y-4">
+          <div className="rounded-2xl border border-zinc-900 bg-surface p-5 sm:p-6 space-y-4">
             <h4 className="text-sm font-semibold text-white">Common questions</h4>
 
             <div className="space-y-2">

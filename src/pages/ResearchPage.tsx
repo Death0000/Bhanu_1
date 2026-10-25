@@ -159,7 +159,7 @@ export default function ResearchPage() {
   const project = PROJECTS.find((p) => p.id === activeId) ?? PROJECTS[0];
 
   return (
-    <div className="w-full min-h-screen bg-[#070708] text-white pt-28 pb-32 relative font-sans antialiased selection:bg-white/10 selection:text-white">
+    <div className="w-full min-h-screen bg-black text-white pt-28 pb-32 relative font-sans antialiased selection:bg-signal selection:text-black">
       <div className="fixed top-20 left-1/4 w-[600px] h-[400px] bg-white/[0.015] rounded-full blur-[160px] pointer-events-none" />
       <div className="fixed bottom-20 right-10 w-[500px] h-[500px] bg-white/[0.01] rounded-full blur-[170px] pointer-events-none" />
 

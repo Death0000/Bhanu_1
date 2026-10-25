@@ -57,7 +57,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
       >
         <Card
           className={cn(
-            "h-full w-full transform-gpu transition-all duration-300 hover:shadow-xl border-zinc-800/80 bg-[#0e0e11]",
+            "h-full w-full transform-gpu transition-all duration-300 hover:shadow-xl border-zinc-800/80 bg-surface",
             // Different styling for the central quote card
             isQuoteType && "flex flex-col items-center justify-center bg-transparent shadow-none border-none text-center"
           )}

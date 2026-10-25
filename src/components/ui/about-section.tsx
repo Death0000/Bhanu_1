@@ -68,7 +68,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
   };
 
   return (
-    <section className="py-16 px-6 bg-[#0b0b0e] border-t border-b border-zinc-900/60 relative overflow-hidden" ref={heroRef}>
+    <section className="py-16 px-6 bg-black border-t border-b border-zinc-900/60 relative overflow-hidden" ref={heroRef}>
 
       <div className="max-w-6xl mx-auto relative">
         <div className="relative mb-8">
@@ -151,7 +151,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
               {/* Badges & Actions */}
               <div className="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none z-10">
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[11px] text-zinc-200 font-medium">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-signal animate-pulse" />
                   Studio & Creative Space
                 </span>
                 <span className="p-1.5 rounded-lg bg-black/50 backdrop-blur-md border border-white/10 text-zinc-300 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all">
@@ -195,7 +195,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
               {/* Badges & Actions */}
               <div className="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between pointer-events-none z-10">
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[11px] text-zinc-200 font-medium">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-signal" />
                   Exhibition Showcase
                 </span>
                 <span className="p-1.5 rounded-lg bg-black/50 backdrop-blur-md border border-white/10 text-zinc-300 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all">
@@ -345,7 +345,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
                 timelineRef={heroRef}
                 customVariants={revealVariants}
                 onClick={() => setActivePage ? setActivePage("contact") : undefined}
-                className="bg-white hover:bg-zinc-200 text-black flex items-center justify-center gap-2 hover:gap-3 transition-all duration-300 ease-in-out px-6 py-3.5 rounded-xl cursor-pointer font-semibold text-xs ml-auto"
+                className="bg-signal hover:bg-white text-black flex items-center justify-center gap-2 hover:gap-3 transition-all duration-300 ease-in-out px-6 py-3.5 rounded-xl cursor-pointer font-semibold text-xs ml-auto"
               >
                 Let's talk <ArrowRight className="w-4 h-4" />
               </TimelineContent>

@@ -71,7 +71,7 @@ interface CustomersPageProps {
 
 export default function CustomersPage({ setActivePage }: CustomersPageProps) {
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] text-white pt-28 pb-20 relative font-sans antialiased selection:bg-white/10 selection:text-white">
+    <div className="w-full min-h-screen bg-black text-white pt-28 pb-20 relative font-sans antialiased selection:bg-signal selection:text-black">
       {/* Page Header */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 mb-16">
         <motion.div
@@ -102,7 +102,7 @@ export default function CustomersPage({ setActivePage }: CustomersPageProps) {
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}
               >
                 <AnimeTiltCard maxTilt={8} scale={1.02} glare={true} className="h-full">
-                  <div className="relative group rounded-xl border border-zinc-800/60 bg-[#0d0d0f] p-6 text-center overflow-hidden hover:border-zinc-700/80 transition-all duration-300 h-full flex flex-col items-center justify-center">
+                  <div className="relative group rounded-xl border border-zinc-800/60 bg-surface p-6 text-center overflow-hidden hover:border-zinc-700/80 transition-all duration-300 h-full flex flex-col items-center justify-center">
                     <div className="flex justify-center mb-3">
                       <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800/60 flex items-center justify-center">
                         <Icon
@@ -142,7 +142,7 @@ export default function CustomersPage({ setActivePage }: CustomersPageProps) {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="relative rounded-xl border border-zinc-800/60 bg-[#0d0d0f] overflow-hidden"
+          className="relative rounded-xl border border-zinc-800/60 bg-surface overflow-hidden"
         >
           <div className="relative z-10 p-10 sm:p-14 text-center">
             <h3 className="text-2xl sm:text-3xl font-normal tracking-tight text-white mb-4">
@@ -154,7 +154,7 @@ export default function CustomersPage({ setActivePage }: CustomersPageProps) {
             <Magnetic strength={0.35} bounce={0.3}>
               <button
                 onClick={() => setActivePage?.("contact")}
-                className="group inline-flex items-center gap-2.5 px-7 py-3.5 bg-white text-black text-sm font-semibold rounded-xl hover:bg-zinc-200 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-white/10"
+                className="group inline-flex items-center gap-2.5 px-7 py-3.5 bg-signal text-black text-sm font-semibold rounded-xl hover:bg-white transition-all duration-300 cursor-pointer shadow-lg hover:shadow-white/10"
               >
                 <span>Get in touch</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform duration-300" />

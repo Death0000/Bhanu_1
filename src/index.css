@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Satoshi", system-ui, -apple-system, sans-serif;
+  --font-display: "Satoshi", system-ui, sans-serif;
+  --font-serif: "Satoshi", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-bg-dark: #0b0b0e;
-  --color-border-dark: #1b1b1f;
-  --color-accent-blue: #3b82f6;
+  /* B'ZN brand palette */
+  --color-ink: #000000;
+  --color-signal: #ffd600;
+  --color-concrete: #e6e6e6;
+  --color-paper: #ffffff;
+  --color-surface: #0a0a0a;
 }
 
 /* Custom Scrollbar */
@@ -17,19 +21,19 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #2a2a2a;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: #ffd600;
 }
 
 html, body {
-  background-color: #0b0b0e;
-  color: #f4f4f5;
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -38,14 +42,14 @@ html, body {
 
 /* shadcn CSS variables for dark theme */
 :root {
-  --background: 0 0% 4%;
+  --background: 0 0% 0%;
   --foreground: 0 0% 95%;
-  --card: 0 0% 6%;
+  --card: 0 0% 4%;
   --card-foreground: 0 0% 95%;
   --muted: 0 0% 15%;
   --muted-foreground: 0 0% 60%;
   --border: 0 0% 15%;
-  --ring: 0 0% 40%;
+  --ring: 52 100% 50%;
   --radius: 0.75rem;
 }
 
@@ -121,3 +125,31 @@ html {
   background-size: 240px 240px;
 }
 
+
+/* Brand interaction layer */
+::selection { background: #ffd600; color: #000; }
+
+:focus-visible {
+  outline: 2px solid #ffd600;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* The slash: B'ZN signature mark used as a divider */
+.brand-slash {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  background: #ffd600;
+  clip-path: polygon(45% 0, 100% 0, 55% 100%, 0 100%);
+  vertical-align: -0.1em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
