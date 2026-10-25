@@ -162,14 +162,14 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed font-light">
-              I am Bhanu Partap, a multidisciplinary graphic designer specialising in brand identity, packaging concepts, event branding and motion-led visual storytelling.
+              I'm Bhanu Partap, a multidisciplinary graphic designer exploring the intersection of brand identity, packaging, motion and speculative design.
             </p>
 
             {/* Quick Metadata Badges */}
             <div className="flex flex-wrap items-center gap-3 pt-2 text-xs">
               <div className="flex items-center gap-2 px-3.5 py-2 bg-zinc-950 border border-zinc-900 rounded-lg text-zinc-300">
                 <MapPin className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
-                <span>Derby, United Kingdom</span>
+                <span>Sheffield, United Kingdom</span>
               </div>
               <div className="flex items-center gap-2 px-3.5 py-2 bg-zinc-950 border border-zinc-900 rounded-lg text-zinc-300">
                 <GraduationCap className="h-3.5 w-3.5 text-zinc-400 shrink-0" />
@@ -288,13 +288,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-sm text-zinc-400 leading-relaxed">
               <p>
-                I am <strong className="text-white font-medium">Bhanu Partap</strong>, a multidisciplinary graphic designer specialising in brand identity, event branding, packaging concepts and motion-led visual storytelling. My work is grounded in thoughtful communication, tactile experiences and visual systems that connect people with stories and brands.
+                I'm <strong className="text-white font-medium">Bhanu Partap</strong>, a multidisciplinary graphic designer exploring the intersection of brand identity, packaging, motion and speculative design. My practice combines visual storytelling with research-led thinking to create meaningful design experiences that communicate ideas, challenge conventions and connect with people.
               </p>
               <p>
-                Born in Chandigarh and now based in Sheffield, I bring together studio and freelance experience with postgraduate design practice to create work that feels engaging, audience-focused and commercially clear. My design language sits at the intersection of identity, packaging and narrative-led communication.
+                Originally from Ludhiana, India, and now based in Sheffield, UK, I bring together industry experience, freelance practice and postgraduate design research. My work has been recognised by the Future of Money Design Awards 2026, where I was named a winner, and the Pentawards 2026, where I received a Bronze award in Student Concepts.
               </p>
               <p>
-                My projects range from speculative civic design to packaging concepts and event graphics, with a consistent focus on making complex ideas feel human, memorable and easy to connect with. I enjoy building ideas from the brief outward — shaping visual systems, communication strategy and final presentation with care.
+                From building visual identities and event branding to exploring future-facing concepts, I'm interested in how design can make complex ideas tangible, human and memorable. I approach each project as an opportunity to question the expected, experiment with new perspectives and create visual systems with purpose.
               </p>
             </div>
           </div>

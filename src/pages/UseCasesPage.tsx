@@ -63,29 +63,11 @@ const CASE_STUDIES: CaseStudy[] = [
       outcome: "Won the Future of Money Award 2026 and sparked a conversation around the role of sound, accessibility and civic communication in public information design."
     },
     narrative: "The Audible Budget is a speculative project that asks: what if public money could be heard, not just read? It turns financial information into an immersive experience."
-  },
-  {
-    id: "dznstudeo",
-    company: "DZNSTUDEO",
-    industry: "Independent Creative Practice",
-    heroText: "Building a multidisciplinary studio practice that turns stories into branding, motion, packaging and visual systems.",
-    stats: [
-      { label: "Practice", value: "Ongoing" },
-      { label: "Disciplines", value: "5+" },
-      { label: "Approach", value: "Story-led" }
-    ],
-    process: {
-      research: "Started with the story and context before deciding which medium — identity, motion, packaging or editorial — best served the idea.",
-      design: "Built a visual practice centred on storytelling, brand systems and multidisciplinary execution across graphic design and moving image.",
-      prototype: "Translated concepts into portfolio, campaign and studio identity materials that connect the visual language to the narrative behind each project.",
-      outcome: "Established DZNSTUDEO as a coherent creative practice rooted in rhythm, clarity and audience-focused communication."
-    },
-    narrative: "DZNSTUDEO reflects Bhanu’s studio identity — a design practice built around multiple disciplines, with each project shaped by the story it needs to tell."
   }
 ];
 
 export default function UseCasesPage() {
-  const [activeStudyId, setActiveStudyId] = useState<string>("dhruthzuci");
+  const [activeStudyId, setActiveStudyId] = useState<string>("respira");
   const [activePhase, setActivePhase] = useState<"research" | "design" | "prototype" | "outcome">("research");
 
   const currentStudy = CASE_STUDIES.find((cs) => cs.id === activeStudyId) || CASE_STUDIES[0];

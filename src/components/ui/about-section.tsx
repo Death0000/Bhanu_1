@@ -289,7 +289,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
                 className="text-xs sm:text-sm leading-relaxed"
               >
                 <p className="text-justify">
-                  I'm Bhanu Partap, a multidisciplinary graphic designer specialising in brand identity, event branding, packaging concepts and motion-led visual storytelling.
+                  I'm Bhanu Partap, a multidisciplinary graphic designer exploring the intersection of brand identity, packaging, motion and speculative design. My practice combines visual storytelling with research-led thinking to create meaningful design experiences that communicate ideas, challenge conventions and connect with people.
                 </p>
               </TimelineContent>
               <TimelineContent
@@ -300,7 +300,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
                 className="text-xs sm:text-sm leading-relaxed"
               >
                 <p className="text-justify">
-                  My approach combines narrative thinking, visual clarity and tactile experimentation. I enjoy shaping ideas into memorable brand systems, packaging concepts and event stories that feel intentional and audience-focused.
+                  Originally from Ludhiana, India, and now based in Sheffield, UK, I bring together industry experience, freelance practice and postgraduate design research. My work has been recognised by the Future of Money Design Awards 2026, where I was named a winner, and the Pentawards 2026, where I received a Bronze award in Student Concepts.
                 </p>
               </TimelineContent>
             </TimelineContent>
