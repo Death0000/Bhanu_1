@@ -321,7 +321,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
                     className="flex items-center gap-2.5 p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
                   >
                     <Phone className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
-                    <span>+44 7311725356</span>
+                    <span className="whitespace-nowrap">+44 7311725356</span>
                   </a>
                 </div>
               </div>

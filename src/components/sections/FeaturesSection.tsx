@@ -242,13 +242,13 @@ export default function FeaturesSection() {
             <div className="z-10 relative mt-auto flex flex-col gap-1.5 pt-4">
               <a
                 href="mailto:Bhanupartap1711@gmail.com"
-                className="text-[15px] sm:text-[17px] font-medium text-black/90 font-sans hover:text-black hover:underline transition-colors block w-fit select-all"
+                className="text-[15px] sm:text-[17px] font-medium text-black/90 font-sans hover:text-black hover:underline transition-colors block w-fit max-w-full break-all select-all"
               >
                 Bhanupartap1711@gmail.com
               </a>
               <a
                 href="tel:+447352664141"
-                className="text-[14px] sm:text-base text-black/70 font-sans hover:text-black/80 transition-colors block w-fit select-all"
+                className="text-[14px] sm:text-base text-black/70 font-sans hover:text-black/80 transition-colors block w-fit whitespace-nowrap select-all"
               >
                 +44 7352 664141
               </a>

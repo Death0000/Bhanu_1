@@ -88,28 +88,31 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {/* Name */}
-                    <div className="space-y-2">
+                    <div className="space-y-2 min-w-0">
                       <label className="text-xs text-zinc-400 block">Your name</label>
                       <input
                         type="text"
+                        autoComplete="name"
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Bhanu Partap"
-                        className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors"
+                        className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-base sm:text-sm py-3.5 px-4 rounded-xl outline-none min-w-0 text-zinc-300 placeholder:text-zinc-700 transition-colors"
                       />
                     </div>
 
                     {/* Email */}
-                    <div className="space-y-2">
+                    <div className="space-y-2 min-w-0">
                       <label className="text-xs text-zinc-400 block">Email address</label>
                       <input
                         type="email"
+                        inputMode="email"
+                        autoComplete="email"
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="you@company.com"
-                        className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors"
+                        className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-base sm:text-sm py-3.5 px-4 rounded-xl outline-none min-w-0 text-zinc-300 placeholder:text-zinc-700 transition-colors"
                       />
                     </div>
                   </div>
@@ -117,10 +120,11 @@ export default function ContactPage() {
                   {/* Project Type */}
                   <div className="space-y-2">
                     <label className="text-xs text-zinc-400 block">What do you need?</label>
+                    <div className="relative">
                     <select
                       value={projectType}
                       onChange={(e) => setProjectType(e.target.value)}
-                      className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-400 transition-colors cursor-pointer appearance-none"
+                      className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-base sm:text-sm py-3.5 pl-4 pr-10 rounded-xl outline-none min-w-0 text-zinc-400 transition-colors cursor-pointer appearance-none"
                     >
                       <option value="ui-ux">Brand Identity</option>
                       <option value="mobile-app">Packaging Design</option>
@@ -129,6 +133,8 @@ export default function ContactPage() {
                       <option value="consultation">Design Consultation</option>
                       <option value="other">Something else</option>
                     </select>
+                    <ChevronDown className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-500" strokeWidth={1.5} />
+                    </div>
                   </div>
 
                   {/* Message */}
@@ -139,7 +145,7 @@ export default function ContactPage() {
                       onChange={(e) => setMessage(e.target.value)}
                       rows={4}
                       placeholder="A brief description of what you're looking for, your timeline, and any relevant details..."
-                      className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-sm py-3.5 px-4 rounded-xl outline-none text-zinc-300 placeholder:text-zinc-700 transition-colors resize-none"
+                      className="w-full bg-black border border-zinc-900 focus:border-zinc-700 text-base sm:text-sm py-3.5 px-4 rounded-xl outline-none min-w-0 text-zinc-300 placeholder:text-zinc-700 transition-colors resize-none"
                     />
                   </div>
 
@@ -206,9 +212,9 @@ export default function ContactPage() {
                   <div className="h-9 w-9 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 shrink-0">
                     <Mail className="h-4 w-4" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <span className="text-xs text-zinc-500 block">Email</span>
-                    <span className="text-xs text-zinc-200 font-medium select-all">Bhanupartap1711@gmail.com</span>
+                    <span className="text-xs text-zinc-200 font-medium select-all block break-all">Bhanupartap1711@gmail.com</span>
                   </div>
                 </a>
               </AnimeTiltCard>
@@ -221,9 +227,9 @@ export default function ContactPage() {
                   <div className="h-9 w-9 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 shrink-0">
                     <Phone className="h-4 w-4" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <span className="text-xs text-zinc-500 block">Phone</span>
-                    <span className="text-xs text-zinc-200 font-medium select-all">+44 7311725356</span>
+                    <span className="text-xs text-zinc-200 font-medium select-all block whitespace-nowrap">+44 7311725356</span>
                   </div>
                 </a>
               </AnimeTiltCard>
