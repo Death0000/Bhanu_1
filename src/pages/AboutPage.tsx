@@ -199,7 +199,7 @@ export default function AboutPage() {
                       exit={{ opacity: 0, scale: 0.98 }}
                       transition={{ duration: 0.35, ease: "easeOut" }}
                       className={`absolute inset-0 w-full h-full object-cover select-none transition-transform duration-700 ease-out group-hover:scale-105 ${
-                        photoMode === "exhibition" ? "object-[50%_38%]" : "object-[50%_20%]"
+                        photoMode === "exhibition" ? "object-[60%_50%]" : "object-[50%_20%]"
                       }`}
                     />
                   </AnimatePresence>
@@ -250,7 +250,7 @@ export default function AboutPage() {
                       </h3>
                       <p className="text-zinc-300 text-xs mt-0.5 font-light">
                         {photoMode === "exhibition" 
-                          ? "Respira · Pentawards 2026 shortlist" 
+                          ? "Respira · Pentawards 2026 Bronze" 
                           : "Graphic Design • Packaging • Motion"}
                       </p>
                     </div>

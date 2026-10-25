@@ -186,7 +186,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
               <img
                 src={exhibitionProfile}
                 alt="Bhanu Partap - Respira Exhibition"
-                className="absolute inset-0 w-full h-full object-cover object-center select-none transition-transform duration-700 ease-out group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover object-[50%_25%] select-none transition-transform duration-700 ease-out group-hover:scale-105"
               />
               {/* Subtle edge vignettes for badge and text contrast without darkening the face */}
               <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/50 to-transparent pointer-events-none" />
@@ -208,7 +208,7 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
                   Respira Showcase
                 </p>
                 <p className="text-zinc-400 text-xs mt-0.5 line-clamp-1">
-                  Packaging concept · Pentawards 2026 shortlist
+                  Packaging concept · Pentawards 2026 Bronze
                 </p>
               </div>
             </TimelineContent>

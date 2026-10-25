@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Linkedin, Mail, Menu, X, ArrowUpRight, Phone, Home, Sparkles, User, Users, Briefcase, MessageSquare } from "lucide-react";
 import { Magnetic } from "@/components/ui/anime-magnetic";
-import brandIcon from "@/Assets/brand-icon.png";
+import brandLogo from "@/Assets/brand-logo.png";
 
 const NAV_LINKS = [
   { label: "Research", id: "research", icon: Sparkles },
@@ -85,13 +85,10 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
               className="flex items-center gap-2 group focus:outline-none cursor-pointer"
             >
               <img
-                src={brandIcon}
-                alt="beyou brand icon"
-                className="w-8 h-8 rounded-full object-cover select-none group-hover:scale-110 group-hover:opacity-90 transition-all duration-300 ease-out shadow-md ring-1 ring-white/10"
+                src={brandLogo}
+                alt="B'zn"
+                className="w-[112px] h-7 object-contain select-none group-hover:scale-105 group-hover:opacity-90 transition-all duration-300 ease-out"
               />
-              <span className="font-display text-2xl font-bold tracking-tight text-white select-none group-hover:opacity-80 transition-opacity duration-300">
-                beyou
-              </span>
             </button>
           </Magnetic>
         </div>
@@ -343,5 +340,3 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
     </>
   );
 }
-
-

@@ -32,7 +32,7 @@ const CASE_STUDIES: CaseStudy[] = [
     imageAlt: "Respira campaign showing the pebble-inspired packaging in use",
     heroText: "Designing a packaging experience that slows the moment down and turns routine use into calm interaction.",
     stats: [
-      { label: "Recognition", value: "Pentawards" },
+      { label: "Recognition", value: "Pentawards Bronze" },
       { label: "Focus", value: "Tactile UX" },
       { label: "Material", value: "Moulded Fibre" }
     ],
@@ -40,7 +40,7 @@ const CASE_STUDIES: CaseStudy[] = [
       research: "Explored how packaging can act as part of the product experience, not just a container, with emotional and sensory cues at the centre of the concept.",
       design: "Developed a pebble-inspired form, soft breathing-wave embossing and a reduced visual language to create a calmer, more tactile interface.",
       prototype: "Built packaging concepts and presentation materials to test form, interaction and the emotional tone of opening and use.",
-      outcome: "Created a distinctive healthcare-packaging concept shortlisted for Pentawards 2026, positioned around calm, touch and meaningful interaction."
+      outcome: "Created a distinctive healthcare-packaging concept that won a Bronze at Pentawards 2026, positioned around calm, touch and meaningful interaction."
     },
     narrative: "Respira is a concept-led packaging exploration that reframes packaging as an emotional and tactile interface for everyday product use."
   },

@@ -38,7 +38,7 @@ const standoutWork = [
       "A speculative civic-design concept that turns public-budget data into an audible, participatory experience for a broader audience.",
   },
   {
-    label: "Pentawards 2026",
+    label: "Pentawards 2026 Bronze",
     title: "Respira",
     description:
       "A healthcare packaging concept shaped by touch, calm and emotional interaction — reframing packaging as part of the product experience.",
