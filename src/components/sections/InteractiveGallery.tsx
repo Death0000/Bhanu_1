@@ -2,45 +2,45 @@ import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { cn } from "../../lib/utils";
 
-// Curated high-res imagery representing pristine, modern Interaction Design works
+// Stock photography matched to each design capability
 const PORTFOLIO_PROJECTS = [
   {
-    src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80",
     alt: "Brand Clarity Through Visual Systems",
     title: "Brand Clarity Through Visual Systems",
     code: "01",
     desc: "Builds a strong visual language that gives a brand clear identity and lasting recognition.",
   },
   {
-    src: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80",
     alt: "Emotional Storytelling in Design",
     title: "Emotional Storytelling in Design",
     code: "02",
     desc: "Helps audiences connect to the message by shaping visuals around mood, intention and meaning.",
   },
   {
-    src: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80",
     alt: "Packaging That Creates Experience",
     title: "Packaging That Creates Experience",
     code: "03",
     desc: "Transforms packaging into a sensory moment where form, texture and communication work together.",
   },
   {
-    src: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
     alt: "Collaboration Through Visual Communication",
     title: "Collaboration Through Visual Communication",
     code: "04",
     desc: "Makes ideas tangible for clients, teams and audiences through clear, persuasive visual narratives.",
   },
   {
-    src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
     alt: "Faster Iteration and Visual Exploration",
     title: "Faster Iteration and Visual Exploration",
     code: "05",
     desc: "Encourages experimentation with concepts, materials and layouts to refine ideas before final execution.",
   },
   {
-    src: "https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=800&q=80",
+    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
     alt: "Design Confidence Through Presentation",
     title: "Design Confidence Through Presentation",
     code: "06",

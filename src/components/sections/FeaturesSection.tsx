@@ -1,91 +1,34 @@
 import React from "react";
-import {
-  ArrowUpRight,
-  Palette,
-  PenTool,
-  Layers,
-  Type,
-  Aperture,
-  Chrome,
-  Camera,
-  Brush,
-  Box,
-  Wand2
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import thinkBiggerImg from "@/Assets/think-bigger.png";
 import multitaskerImg from "@/Assets/multitasker.png";
 import photographerImg from "@/Assets/photographer.png";
 import { Magnetic } from "@/components/ui/anime-magnetic";
 
-// Custom brand icon SVGs
-const FigmaIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 38 38" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M12 25h7a7 7 0 1 1-7-7h7m-7 7V11m0 14a7 7 0 1 1-7-7h7M19 18a7 7 0 1 0 7-7h-7m0 21V11m0 7h7a7 7 0 1 1-7-7h7" />
-  </svg>
-);
-
-const FramerIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M5 2h14v7H5zm0 13h14v7l-7-7zM5 9h7l7 6H5z" />
-  </svg>
-);
-
 export default function FeaturesSection() {
   const containerRef = React.useRef<HTMLDivElement>(null);
 
   const row1Icons = [
-    { name: "Figma", type: "figma" },
-    { name: "Framer", type: "framer" },
-    { name: "Palette", type: "Palette" },
-    { name: "PenTool", type: "PenTool" },
-    { name: "Layers", type: "Layers" },
-    { name: "Type", type: "Type" },
-    { name: "Aperture", type: "Aperture" },
-    { name: "Chrome", type: "Chrome" }
+    { name: "Adobe Photoshop", label: "Ps" },
+    { name: "Adobe Illustrator", label: "Ai" },
+    { name: "Adobe InDesign", label: "Id" },
+    { name: "Adobe Premiere Pro", label: "Pr" },
+    { name: "Adobe After Effects", label: "Ae" }
   ];
 
   const row2Icons = [
-    { name: "Camera", type: "Camera" },
-    { name: "Brush", type: "Brush" },
-    { name: "Box", type: "Box" },
-    { name: "Wand2", type: "Wand2" },
-    { name: "Figma", type: "figma" },
-    { name: "Framer", type: "framer" },
-    { name: "Type", type: "Type" },
-    { name: "Layers", type: "Layers" }
+    { name: "Adobe After Effects", label: "Ae" },
+    { name: "Adobe Premiere Pro", label: "Pr" },
+    { name: "Adobe InDesign", label: "Id" },
+    { name: "Adobe Illustrator", label: "Ai" },
+    { name: "Adobe Photoshop", label: "Ps" }
   ];
 
-  const renderIcon = (item: { name: string; type: string }) => {
-    const iconClass = "h-5 w-5 sm:h-6 sm:w-6 stroke-[1.5] text-white/90";
-    switch (item.type) {
-      case "figma":
-        return <FigmaIcon className={iconClass} />;
-      case "framer":
-        return <FramerIcon className={iconClass} />;
-      case "Palette":
-        return <Palette className={iconClass} />;
-      case "PenTool":
-        return <PenTool className={iconClass} />;
-      case "Layers":
-        return <Layers className={iconClass} />;
-      case "Type":
-        return <Type className={iconClass} />;
-      case "Aperture":
-        return <Aperture className={iconClass} />;
-      case "Chrome":
-        return <Chrome className={iconClass} />;
-      case "Camera":
-        return <Camera className={iconClass} />;
-      case "Brush":
-        return <Brush className={iconClass} />;
-      case "Box":
-        return <Box className={iconClass} />;
-      case "Wand2":
-        return <Wand2 className={iconClass} />;
-      default:
-        return <Layers className={iconClass} />;
-    }
-  };
+  const renderIcon = (item: { name: string; label: string }) => (
+    <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-md border-[1.5px] border-white/90 text-[11px] sm:text-xs font-bold leading-none tracking-tight text-white/90">
+      {item.label}
+    </span>
+  );
 
   return (
     <section
